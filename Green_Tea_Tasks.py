@@ -1,4 +1,4 @@
-from prefect import task, Flow
+from prefect import task
 
 @task
 def Genmaicha():
