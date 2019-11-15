@@ -26,6 +26,3 @@ with Flow("List of Teas") as List_Teas:
     chai_tea_result = Chai_Teas()
     herbal_tea_result = Herbal_Teas()
  
-list_teas_state = List_Teas.run()
-
-assert list_teas_state.is_successful()
