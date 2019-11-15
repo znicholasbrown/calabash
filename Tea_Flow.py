@@ -2,19 +2,20 @@ from prefect import Flow, task
 
 @task
 def Green_Teas():
-    print("List of Green Teas")
+    print("Getting Green Teas")
+    from Green_Tea_Tasks import AllGreenTeas
 
 @task
 def Black_Teas():
-    print("List of Black Teas")
+    print("Getting Black Teas")
 
 @task
 def Chai_Teas():
-    print("List of Chai Teas")
+    print("Getting Chai Teas")
 
 @task
 def Herbal_Teas():
-    print("List of Herbal Teas")
+    print("Getting Herbal Teas")
 
 with Flow("List of Teas") as List_Teas:
     green_tea_result = Green_Teas()

@@ -1,8 +1,22 @@
 from prefect import task
 
 @task
+def AllGreenTeas():
+    print("List of Green Teas")
+    Genmaicha()
+    Fridalicious()
+    JasmineRose()
+    RaspberryBeret()
+    RockinMoroccan()
+    TempleofHeavenGunpowderGreenTea()
+    KashmiriGingerSpice()
+    ChunMeiGreenTea()
+
+
+@task
 def Genmaicha():
     print("Genmaicha")
+    GenmaichaDescription()
 
 @task
 def GenmaichaDescription():
@@ -11,6 +25,7 @@ def GenmaichaDescription():
 @task
 def Fridalicious():
     print("Frida-licious")
+    FridaliciousDescription()
 
 @task
 def FridaliciousDescription():
@@ -19,6 +34,7 @@ def FridaliciousDescription():
 @task
 def JasmineRose():
     print("Jasmine Rose")
+    JasmineRoseDescription()
 
 @task
 def JasmineRoseDescription():
@@ -27,6 +43,7 @@ def JasmineRoseDescription():
 @task
 def RaspberryBeret():
     print("Raspberry Beret")
+    RaspberryBeretDescription()
 
 @task
 def RaspberryBeretDescription():
@@ -35,6 +52,7 @@ def RaspberryBeretDescription():
 @task
 def RockinMoroccan():
     print("Rockin' Moroccan")
+    RockinMoroccanDescription()
 
 @task
 def RockinMoroccanDescription():
@@ -43,6 +61,7 @@ def RockinMoroccanDescription():
 @task
 def TempleofHeavenGunpowderGreenTea():
     print("Temple of Heaven Gunpowder Green Tea")
+    TempleofHeavenGunpowderGreenTeaDescription()
 
 @task
 def TempleofHeavenGunpowderGreenTeaDescription():
@@ -51,6 +70,7 @@ def TempleofHeavenGunpowderGreenTeaDescription():
 @task
 def KashmiriGingerSpice():
     print("Kashmiri Ginger Spice")
+    KashmiriGingerSpiceDescription()
 
 @task
 def KashmiriGingerSpiceDescription():
@@ -59,7 +79,9 @@ def KashmiriGingerSpiceDescription():
 @task
 def ChunMeiGreenTea():
     print("Chun Mei Green Tea")
+    ChunMeiGreenTeaDescription()
 
 @task
 def ChunMeiGreenTeaDescription():
     print("First-pluck, hand-twisted Chinese green tea")
+
