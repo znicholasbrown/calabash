@@ -1,13 +1,5 @@
 from prefect import Flow, task
-from prefect.environments.storage import Docker
 
-storage = Docker(
-    base_image="python:3.7",
-    python_dependencies=[],
-    registry_url="prefecthq",
-    image_name="tea-flow",
-    image_tag="tea-flow",
-)
 
 @task
 def Green_Teas():
@@ -28,7 +20,7 @@ def Chai_Teas():
 def Herbal_Teas():
     print("Getting Herbal Teas")
 
-with Flow("List of Teas", storage=storage) as List_Teas:
+with Flow("List of Teas") as List_Teas:
     green_tea_result = Green_Teas()
     black_tea_result = Black_Teas()
     chai_tea_result = Chai_Teas()
