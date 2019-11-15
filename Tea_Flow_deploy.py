@@ -4,7 +4,7 @@ List_Teas.deploy(
     "Flow Schematics", 
     base_image="python:3.7",
     python_dependencies=[],
-    registry_url="docker.io/znicholasbrown",
-    image_name="tea-flow",
+    registry_url="znicholasbrown",
+    image_name="prefect_flow",
     image_tag="tea-flow",
 )
