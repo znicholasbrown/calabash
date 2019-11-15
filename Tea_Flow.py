@@ -4,6 +4,7 @@ from prefect.environments.storage import Docker
 storage = Docker(
     base_image="python:3.7",
     python_dependencies=[],
+    registry_url="prefecthq",
     image_name="tea-flow",
     image_tag="tea-flow",
 )
