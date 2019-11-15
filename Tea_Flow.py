@@ -1,11 +1,13 @@
+import pyfiglet
+import prefect
 from prefect import Flow, task
+from Green_Tea_Tasks import AllGreenTeas
 
 
 @task
 def Green_Teas():
-    print("Getting Green Teas")
-    
-    from Green_Tea_Tasks import AllGreenTeas
+    print()
+    pyfiglet.figlet_format("Getting Green Teas")
     AllGreenTeas()
 
 @task
